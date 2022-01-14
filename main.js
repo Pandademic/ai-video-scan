@@ -14,7 +14,7 @@ function draw(){
     image(video,0,0,480,380);
     if(status != ""){
         objectDetector.detect(video,gotResult());
-        for(i=0;i<objects.length;i++){
+        for(i=0;i<objects.length; i++){
             document.getElementById("status").innerHTML = "status: Objects Detected";
             document.getElementById("number_of_objects").innerHTML = "Count of objects detected: " + objects.length ;
             fill("red");
